@@ -1,11 +1,42 @@
 Heroku is not working.  Below is the message I receive.  I've tried all the online solutions I can find without avail.
 
-C:\Users\Bill\Documents\GitHub\flask-mailroom>git push heroku master
-git@heroku.com: Permission denied (publickey).
-fatal: Could not read from remote repository.
+remote:            ERROR: Command errored out with exit status 1:
+remote:             command: /app/.heroku/python/bin/python -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-vffzwllk/MarkupSafe/setup.py'"'"'; __file__='"'"'/
+tmp/pip-install-vffzwllk/MarkupSafe/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, _
+_file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-fatc42nj
+remote:                 cwd: /tmp/pip-install-vffzwllk/MarkupSafe/
+remote:            Complete output (5 lines):
+remote:            Traceback (most recent call last):
+remote:              File "<string>", line 1, in <module>
+remote:              File "/tmp/pip-install-vffzwllk/MarkupSafe/setup.py", line 6, in <module>
+remote:                from setuptools import setup, Extension, Feature
+remote:            ImportError: cannot import name 'Feature'
+remote:            ----------------------------------------
+remote:        ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+remote:  !     Push rejected, failed to compile Python app.
+remote:
+remote:  !     Push failed
+remote: !
+remote:  ! ## Warning - The same version of this code has already been built: 4ab3d6b58060bb7c062529feb9b617d7c9894d00
+remote:  !
+remote:  ! We have detected that you have triggered a build from source code with version 4ab3d6b58060bb7c062529feb9b617d7c9894d00
+remote:  ! at least twice. One common cause of this behavior is attempting to deploy code from a different branch.
+remote:  !
+remote:  ! If you are developing on a branch and deploying via git you must run:
+remote:  !
+remote:  !     git push heroku <branchname>:main
+remote:  !
+remote:  ! This article goes into details on the behavior:
+remote:  !   https://devcenter.heroku.com/articles/duplicate-build-version
+remote:
+remote: Verifying deploy...
+remote:
+remote: !       Push rejected to serene-beach-48079.
+remote:
+To heroku.com:serene-beach-48079.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+error: failed to push some refs to 'git@heroku.com:serene-beach-48079.git'
 
-Please make sure you have the correct access rights
-and the repository exists.
 
 
 
